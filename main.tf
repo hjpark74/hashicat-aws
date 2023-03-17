@@ -131,6 +131,11 @@ resource "aws_instance" "hashicat" {
   }
 }
 
+resource "aws_instance" "devops" {
+  tags = {
+    Name = "Department"
+}
+
 # We're using a little trick here so we can run the provisioner without
 # destroying the VM. Do not do this in production.
 
