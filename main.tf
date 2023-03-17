@@ -132,9 +132,8 @@ resource "aws_instance" "hashicat" {
 }
 
 resource "aws_instance" "devops" {
-  
   tags = {
-    name = "Department"
+    "Name" = "Department"
   }
 }
 
